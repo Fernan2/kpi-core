@@ -5,6 +5,5 @@ class ConteosController < ApplicationController
 
   def new
     @conteo = Conteo.new
-    render 'form'
   end
 end
