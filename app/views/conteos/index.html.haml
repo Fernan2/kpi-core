@@ -1,3 +1,15 @@
 %h1 Conteos
 
 = link_to 'Nuevo conteo', new_conteo_path
+
+%table
+  %tr
+    %th= Conteo.human_attribute_name(:dia)
+    %th= Conteo.human_attribute_name(:loc_core)
+    %th= Conteo.human_attribute_name(:loc_total)
+  - @conteos.each do |conteo|
+    %tr
+      %td= l(conteo.dia)
+      %td= conteo.loc_core
+      %td= conteo.loc_total
+
