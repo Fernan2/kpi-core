@@ -1,0 +1,7 @@
+es:
+  activerecord:
+    attributes:
+      conteo:
+        loc_core: LOC (core)
+        loc_total: LOC (total)
+        dia: Día
