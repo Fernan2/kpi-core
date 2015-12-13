@@ -23,6 +23,11 @@ class ConteosController < ApplicationController
     redirect_to conteos_path
   end
 
+  def destroy
+    Conteo.find(params[:id]).destroy
+    redirect_to conteos_path
+  end
+
   private
 
   def params_conteo
