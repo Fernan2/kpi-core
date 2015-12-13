@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'simple_form'
 gem 'haml-rails'
+# https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server
+gem 'puma' 
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
