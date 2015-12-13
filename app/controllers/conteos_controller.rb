@@ -1,4 +1,6 @@
 class ConteosController < ApplicationController
+  before_action :admin_required, except: :index
+
   def index
     @conteos = Conteo.order(:dia)
   end
