@@ -12,9 +12,15 @@ class ConteosController < ApplicationController
     @conteo.save or return render('new')
     redirect_to conteos_path
   end
-  
+
   def edit
     @conteo = Conteo.find(params[:id])
+  end
+
+  def update
+    @conteo = Conteo.find(params[:id])
+    @conteo.update_attributes(params_conteo) or return render('edit')
+    redirect_to conteos_path
   end
 
   private
