@@ -21,6 +21,7 @@ gem 'puma'
 gem 'devise'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
+gem 'newrelic_rpm'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
